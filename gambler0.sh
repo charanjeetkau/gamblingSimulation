@@ -1,3 +1,9 @@
 #!/bin/bash -x
-stakePerDay=100
-betEveryGame=1
+
+play=$(( $RANDOM % 2 ))
+if [ $play -eq 0 ]
+then
+	echo "wins $ 1"
+else
+	echo "lost $ 1"
+fi
